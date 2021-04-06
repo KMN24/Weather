@@ -3,4 +3,5 @@
     <string name="hello_kotlin">Hello Kotlin</string>
     <string name="greeting">Hello</string>
     <string name="hello_world">Hello world</string>
+    <string name="ok">OK</string>
 </resources>

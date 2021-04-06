@@ -2,18 +2,20 @@ package kg.kmn.weather
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
+import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var tvText : TextView
+    private lateinit var mAcceptBtn : Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        tvText = findViewById(R.id.tv_text)
-        tvText.text = getString(R.string.greeting)
-        tvText.textSize = 30f
-        tvText.setTextColor(resources.getColor(R.color.colorPrimaryDark))
+        mAcceptBtn = findViewById(R.id.btn_ok)
+        mAcceptBtn.setOnClickListener{
+            Toast.makeText(this, getString(R.string.greeting), Toast.LENGTH_SHORT).show()
+        }
 
     }
 }

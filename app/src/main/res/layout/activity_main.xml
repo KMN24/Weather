@@ -5,14 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_text"
+    <Button
+        android:id="@+id/btn_ok"
         android:layout_width="match_parent"
-        android:gravity="center"
+        android:textColor="@color/white"
+        android:background="@drawable/selector_btn_rounded"
+        android:enabled="true"
         android:layout_height="wrap_content"
-        android:text="@string/hello_kotlin"
-        />
+        android:layout_margin="16dp"
+        android:text="@string/ok" />
 
 </LinearLayout>
