@@ -12,10 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        mAcceptBtn = findViewById(R.id.btn_ok)
-        mAcceptBtn.setOnClickListener{
-            Toast.makeText(this, getString(R.string.greeting), Toast.LENGTH_SHORT).show()
-        }
+
 
     }
 }
